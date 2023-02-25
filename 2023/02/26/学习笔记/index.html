@@ -5,17 +5,24 @@
   
 
   
-  <title>学习笔记 | Hexo</title>
+  <title>JAVA核心技术学习笔记 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="学习笔记">
+  <meta name="description" content="JAVA第三章、java的基本程序设计结构3.1访问修饰符：用于控制程序的其他部分对这段代码的访问级别 3.3 数据类型长整型有后缀l&#x2F;L, 十六进制数有前缀0x&#x2F;0X, 八进制有前缀0例如010表示十进制8，二进制前缀0b. 数字可加下划线。 1Math.rount(3.14) : long&#x2F;&#x2F;浮点数舍入运算  &amp;&amp; 和 ||采用短路逻辑  三元操作符 x &lt; y ? x">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JAVA核心技术学习笔记">
 <meta property="og:url" content="https://which5264.github.io/2023/02/26/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="JAVA第三章、java的基本程序设计结构3.1访问修饰符：用于控制程序的其他部分对这段代码的访问级别 3.3 数据类型长整型有后缀l&#x2F;L, 十六进制数有前缀0x&#x2F;0X, 八进制有前缀0例如010表示十进制8，二进制前缀0b. 数字可加下划线。 1Math.rount(3.14) : long&#x2F;&#x2F;浮点数舍入运算  &amp;&amp; 和 ||采用短路逻辑  三元操作符 x &lt; y ? x">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/16923/20230226011904.png">
+<meta property="og:image" content="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/16923/20230226012027.png">
+<meta property="og:image" content="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/16923/20230226012117.png">
+<meta property="og:image" content="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/16923/20230226012231.png">
 <meta property="article:published_time" content="2023-02-25T17:05:43.000Z">
-<meta property="article:modified_time" content="2023-02-25T17:05:43.908Z">
+<meta property="article:modified_time" content="2023-02-25T17:23:53.997Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/16923/20230226011904.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -64,7 +71,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="java核心技术-学习笔记" class="article article-type-java核心技术" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2023/02/26/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-date">
   <time datetime="2023-02-25T17:05:43.000Z" itemprop="datePublished">2023-02-26</time>
@@ -78,7 +85,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      学习笔记
+      JAVA核心技术学习笔记
     </h1>
   
 
@@ -86,11 +93,443 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h1><h2 id="第三章、java的基本程序设计结构"><a href="#第三章、java的基本程序设计结构" class="headerlink" title="第三章、java的基本程序设计结构"></a>第三章、java的基本程序设计结构</h2><h3 id="3-1"><a href="#3-1" class="headerlink" title="3.1"></a>3.1</h3><p><strong>访问修饰符</strong>：用于控制程序的其他部分对这段代码的访问级别</p>
+<h3 id="3-3-数据类型"><a href="#3-3-数据类型" class="headerlink" title="3.3 数据类型"></a>3.3 数据类型</h3><p>长整型有后缀l/L, 十六进制数有前缀0x/0X, 八进制有前缀0例如010表示十进制8，二进制前缀0b.</p>
+<p>数字可加下划线。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Math.rount(3.14) : long//浮点数舍入运算</span><br></pre></td></tr></table></figure>
+
+<p>&amp;&amp; 和 ||采用短路逻辑</p>
+<ul>
+<li>三元操作符 x &lt; y ? x : y</li>
+<li>位运算符</li>
+</ul>
+<h4 id="3-4-4-枚举类型"><a href="#3-4-4-枚举类型" class="headerlink" title="3.4.4 枚举类型"></a>3.4.4 枚举类型</h4><p>自定义枚举类型： <code>enum Size &#123; SMALL，MEDIUM，LARGE，EXTRA_LARGE &#125;;</code></p>
+<p>声明： <code>size s = Size.MEDIUM;</code></p>
+<p>Size类型的变量只能存储这个类型声明中给定的某个枚举值，或null，null表示这个变量没有设置任何值。</p>
+<h3 id="3-6-字符串"><a href="#3-6-字符串" class="headerlink" title="3.6 字符串"></a>3.6 字符串</h3><h3 id="3-8-控制流程"><a href="#3-8-控制流程" class="headerlink" title="3.8 控制流程"></a>3.8 控制流程</h3><h4 id="switch-case"><a href="#switch-case" class="headerlink" title="switch-case"></a>switch-case</h4><ul>
+<li>case<strong>标签</strong>可以是：byte, short, int, char, String(<strong>java 7+</strong>),枚举常量。</li>
+<li>switch-case语句中 case 分支不存在 break 时，有警告，如果故意采用直通式行为，使用@suppressWarnings(“fallthrough”)。</li>
+</ul>
+<h4 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h4><ul>
+<li>如果将continue语句用于for循环中，就可以跳到for循环的“更新”部分。</li>
+</ul>
+<h3 id="3-9-大数"><a href="#3-9-大数" class="headerlink" title="3.9 大数"></a>3.9 大数</h3><p>java.math.</p>
+<ul>
+<li>BigInteger</li>
+<li>BigDecimal</li>
+</ul>
+<h3 id="3-10-数组"><a href="#3-10-数组" class="headerlink" title="3.10 数组"></a>3.10 数组</h3><p>声明：</p>
+<ul>
+<li><code> int[] arr = new int[n];</code></li>
+<li><code>int[] arr = &#123;1,2,3,4,&#125;;</code></li>
+</ul>
+<blockquote>
+<p><strong>长度为0的数组与null不同</strong></p>
+</blockquote>
+<p>数组拷贝: <code>Arrays.copyOf(type[] arr,int length);</code></p>
+<p>java 和 c二维数组，行列相反。</p>
+<h2 id="第四章、对象和类"><a href="#第四章、对象和类" class="headerlink" title="第四章、对象和类"></a>第四章、对象和类</h2><h3 id="4-1-面向对象"><a href="#4-1-面向对象" class="headerlink" title="4.1 面向对象"></a>4.1 面向对象</h3><p>类与类的关系：</p>
+<ul>
+<li><strong>依赖</strong> use a : 一个类的方法使用或操纵另一个类的对象</li>
+<li><strong>聚合</strong> has a</li>
+<li><strong>继承</strong> is a</li>
+</ul>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/16923/20230226011904.png"></p>
+<p><strong>对象变量并没有实际包含一个对象，它只是引用一个对象。</strong></p>
+<p><strong>参数类型</strong>：</p>
+<ul>
+<li>隐式参数：方法名前的对象</li>
+<li>显式参数：方法名括号中的数值</li>
+</ul>
+<p>在方法中，<strong>this</strong> 指示隐式参数。</p>
+<h3 id="4-2-预定义类"><a href="#4-2-预定义类" class="headerlink" title="4.2 预定义类"></a>4.2 预定义类</h3><p>对象变量并没有实际包含一个对象，它只是引用一个对象。</p>
+<h3 id="4-3-自定义类"><a href="#4-3-自定义类" class="headerlink" title="4.3 自定义类"></a>4.3 自定义类</h3><p>public 意味着任何类的任何方法都可以调用这些方法。</p>
+<p>private 确保只有类自身的方法能够访问这些实例字段，而其他类的方法不能够读写这些字段。</p>
+<p>不能对<strong>已经存在</strong>的对象调用构造器来重新设置字段内容。</p>
+<p>基本数据类型即使未初始化也不可能为 null。</p>
+<p>final 关键字修饰类变量时表示引用不会再指向另一个不同的对象，而不是引用的对象属性不可以更改。</p>
+<h3 id="4-4-静态字段与静态方法"><a href="#4-4-静态字段与静态方法" class="headerlink" title="4.4 静态字段与静态方法"></a>4.4 静态字段与静态方法</h3><p>静态方法：</p>
+<ul>
+<li><p>不依赖任何对象，换句话说，它没有隐式参数。</p>
+</li>
+<li><p>可以认为，静态方法是没有this参数的方法。</p>
+</li>
+<li><p>不能在对象上执行操作</p>
+</li>
+</ul>
+<p>在下面两种情况下可以使用静态方法:</p>
+<ul>
+<li>方法不需要访问对象状态，因为它需要的<strong>所有</strong>参数都通过<strong>显式</strong>参数提供（例如:Math.pow)。</li>
+<li>方法<strong>只</strong>需要访问类的<strong>静态字段</strong></li>
+</ul>
+<h3 id="4-5-方法参数"><a href="#4-5-方法参数" class="headerlink" title="4.5 方法参数"></a>4.5 方法参数</h3><p>java 总是采用<strong>按值调用</strong>，方法可以改变对象参数的状态，方法得到的是对象引用的副本，原来的引用和这个副本都引用同一个对象。方法不能修改传递给它的任何参数变量的内容。</p>
+<p>将参数传递给方法的两种情况：</p>
+<ul>
+<li>按值调用：表示方法接收的是调用者提供的值。</li>
+<li>按引用调用：表示方法接收的是调用者提供的变量地址。</li>
+</ul>
+<p>一个方法可以修改传递引用所对应的变量值，而不能修改传递值调用所对应的变量值。</p>
+<p>java中对象引用是按值传递的，方法不能让一个对象参数引用一个新的对象。</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/pop1586082213/article/details/118071050">csdn:按值传递，按引用传递？</a></p>
+<h3 id="4-6对象构造"><a href="#4-6对象构造" class="headerlink" title="4.6对象构造"></a>4.6对象构造</h3><p>顺序：先初始化，再构造器</p>
+<h4 id="4-6-1-重载-（-overload-）"><a href="#4-6-1-重载-（-overload-）" class="headerlink" title="4.6.1 重载 （==overload==）"></a>4.6.1 重载 （==<em>overload</em>==）</h4><blockquote>
+<p>相同的名字，不同的参数。</p>
+</blockquote>
+<h4 id="4-6-2-默认字段初始化"><a href="#4-6-2-默认字段初始化" class="headerlink" title="4.6.2 默认字段初始化"></a>4.6.2 默认字段初始化</h4><blockquote>
+<p>构造器没管的，数值为0，布尔为false，对象引用为null。</p>
+</blockquote>
+<p>不要故意不初始化字段，依赖默认值，影响代码可读性。</p>
+<h4 id="4-6-6-调用另一个构造器"><a href="#4-6-6-调用另一个构造器" class="headerlink" title="4.6.6 调用另一个构造器"></a>4.6.6 调用另一个构造器</h4><p>==对公共构造器代码只需要编写一次即可。（p130 什么意思？？？）==</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="title function_">Employee</span><span class="params">(<span class="type">double</span> s)</span>&#123;</span><br><span class="line">    <span class="comment">//calls Employee(String , double)</span></span><br><span class="line">    <span class="built_in">this</span>(<span class="string">&quot;Employee #&quot;</span> + nextId, s);</span><br><span class="line">    nextId++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-7-包"><a href="#4-7-包" class="headerlink" title="4.7 包"></a>4.7 包</h3><h4 id="4-7-3-静态导入"><a href="#4-7-3-静态导入" class="headerlink" title="4.7.3 静态导入"></a>4.7.3 静态导入</h4><p><code>import static java.lang.System.*</code> 就可以使用System的静态方法和静态字段。</p>
+<h4 id="4-7-5-包访问"><a href="#4-7-5-包访问" class="headerlink" title="4.7.5 包访问"></a>4.7.5 包访问</h4><ul>
+<li>public ：可以由任意类使用。</li>
+<li>private ：只能由定义他们的类使用。</li>
+<li>未指定：可以被同一个包中的所有方法访问。</li>
+</ul>
+<h4 id="4-8-1-创建-jar-文件"><a href="#4-8-1-创建-jar-文件" class="headerlink" title="4.8.1 创建 jar 文件"></a>4.8.1 创建 jar 文件</h4><h3 id="4-10-类设计技巧"><a href="#4-10-类设计技巧" class="headerlink" title="4.10 类设计技巧"></a>4.10 类设计技巧</h3><ol>
+<li>保持数据私有</li>
+<li>对数据进行初始化</li>
+<li>不要在类中使用过多基本类型 （用一个新类替换一些字段）</li>
+<li>不是所有的字段都需要单独的字段访问器和字段更改器</li>
+<li>分解有过多职责的类</li>
+<li>类名和方法名要能够体现它们的职责 </li>
+<li>优先使用不可变的类</li>
+</ol>
+<h2 id="第五章、继承"><a href="#第五章、继承" class="headerlink" title="第五章、继承"></a>第五章、继承</h2><h3 id="5-1-类、超类、子类"><a href="#5-1-类、超类、子类" class="headerlink" title="5.1 类、超类、子类"></a>5.1 类、超类、子类</h3><h4 id="5-1-1-定义子类"><a href="#5-1-1-定义子类" class="headerlink" title="5.1.1 定义子类"></a>5.1.1 定义子类</h4><p>已经存在的类称为<strong>超类</strong>、<strong>基类</strong>、<strong>父类</strong>；新类称为<strong>子类</strong>、<strong>派生类</strong>、<strong>孩子类</strong>。</p>
+<h4 id="5-1-2-覆盖方法（-override-）"><a href="#5-1-2-覆盖方法（-override-）" class="headerlink" title="5.1.2 覆盖方法（==override==）"></a>5.1.2 覆盖方法（==<em>override</em>==）</h4><h4 id="5-1-3-子类构造器"><a href="#5-1-3-子类构造器" class="headerlink" title="5.1.3 子类构造器"></a>5.1.3 子类构造器</h4><blockquote>
+<p>如果子类的构造器没有显式地调用超类的构造器，将自动地调用超类的无参数构造器。如果超类没有无参数的构造器，并且在子类的构造器中又没有显式地调用超类的其他构造器，Java编译器就会报告一个错误。</p>
+</blockquote>
+<h4 id="5-1-7-阻止继承：final-类和方法"><a href="#5-1-7-阻止继承：final-类和方法" class="headerlink" title="5.1.7 阻止继承：final 类和方法"></a>5.1.7 阻止继承：final 类和方法</h4><p>final方法不能被子类覆盖</p>
+<h4 id="5-1-8-强制类型转换"><a href="#5-1-8-强制类型转换" class="headerlink" title="5.1.8 强制类型转换"></a>5.1.8 强制类型转换</h4><ul>
+<li>只能在继承层次内进行强制类型转换</li>
+<li>在将超类强制转换成子类之前，应该使用 <strong>instanceof</strong> 进行检查</li>
+</ul>
+<h4 id="5-1-9-抽象类"><a href="#5-1-9-抽象类" class="headerlink" title="5.1.9 抽象类"></a>5.1.9 抽象类</h4><p>包含一个或多个抽象方法的类本身必须被声明为抽象的。（包含抽象方法的类一定是抽象类）</p>
+<p>抽象类不能实例化。</p>
+<h4 id="5-1-10-受保护访问"><a href="#5-1-10-受保护访问" class="headerlink" title="5.1.10 受保护访问"></a>5.1.10 受保护访问</h4><p>private修饰字段确保只有类自身的方法能访问这些实例字段，其他类的方法不能读写这些字段。</p>
+<p>任何声明为private的内容对其他类都是不可见的，这对于子类来说也完全适用，即子类也不能访问超类的私有字段。不过，在有些时候，你可能希望<strong>限制超类中的某个方法只允许子类访问</strong>，或者更少见地，可能希望允许子类的方法访问超类的某个字段。为此，需要将这些类方法或字段声明为受保护( protected)。例如，如果将超类Employee中的字段声明为proteced，而不是private，Manager方法就可以直接访问这个字段。</p>
+<p>下面对Java 中的4个<strong>访问控制修饰符</strong>做个小结:</p>
+<ul>
+<li>仅对本类可见——private。</li>
+<li>对外部完全可见——public。</li>
+<li>对本包和所有子类可见——protected。</li>
+<li>对本包可见——默认（很遗憾)，不需要修饰符。</li>
+</ul>
+<h3 id="5-2-Object-：所有类的超类"><a href="#5-2-Object-：所有类的超类" class="headerlink" title="5.2 Object ：所有类的超类"></a>5.2 Object ：所有类的超类</h3><p>0bject类型的变量只能用于作为各种值的一个==泛型容器==。要想对其中的内容进行具体的操作，还需要清楚对象的原始类型，并进行相应的强制类型转换</p>
+<p>在Java中，只有基本类型(primitive type)不是对象：byte, short, int, long, float, double, boolean, char.</p>
+<h4 id="5-2-4-hashCode"><a href="#5-2-4-hashCode" class="headerlink" title="5.2.4 hashCode"></a>5.2.4 hashCode</h4><p>字符串的散列码是由内容导出的。</p>
+<p>Object 类的默认 hashCode 方法会从对象的存储地址得出散列码。 </p>
+<p><strong>一旦重写了equals方法，就一定要重写hashCode方法</strong>。</p>
+<h3 id="5-3-泛型数组列表"><a href="#5-3-泛型数组列表" class="headerlink" title="5.3 泛型数组列表"></a>5.3 泛型数组列表</h3><h4 id="5-3-1-声明数组列表"><a href="#5-3-1-声明数组列表" class="headerlink" title="5.3.1 声明数组列表"></a>5.3.1 声明数组列表</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;Employee&gt; list = <span class="keyword">new</span> <span class="title class_">ArrrayList</span>&lt;&gt;();</span><br><span class="line"><span class="type">var</span> <span class="variable">list</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;Employee&gt;();</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-3-3-已类型化和原始数组列表的兼容性"><a href="#5-3-3-已类型化和原始数组列表的兼容性" class="headerlink" title="5.3.3 已类型化和原始数组列表的兼容性"></a>5.3.3 已类型化和原始数组列表的兼容性</h4><p>可以将类型化的赋值给原始数组列表，反之则会得到一个警告。</p>
+<h3 id="5-4-对象包装器与自动装箱"><a href="#5-4-对象包装器与自动装箱" class="headerlink" title="5.4 对象包装器与自动装箱"></a>5.4 对象包装器与自动装箱</h3><blockquote>
+<p>箱就是一个对象</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//自动装箱：</span></span><br><span class="line">list.add(<span class="number">3</span>);</span><br><span class="line">list.add(Integer.valueOf(<span class="number">3</span>));</span><br><span class="line"><span class="comment">//自动拆箱：</span></span><br><span class="line"><span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> list.get[i];</span><br><span class="line"><span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> list.get(i).intValue();</span><br></pre></td></tr></table></figure>
+
+<p>自动装箱规范要求boolean、byte、chars&lt;=127,介于-128和127之间的<strong>short</strong>和 <strong>int</strong>被包装到固定的对象中。例如，如果在前面的例子中将a和b初始化为100,那么它们的比较结果一定成功。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Integer</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">100</span>,b = <span class="number">100</span>;</span><br><span class="line">a == b;<span class="comment">//true</span></span><br><span class="line"><span class="type">Integer</span> <span class="variable">c</span> <span class="operator">=</span> <span class="number">200</span>,d = <span class="number">200</span>;</span><br><span class="line">c == d;<span class="comment">//false</span></span><br></pre></td></tr></table></figure>
+
+<p>装箱和拆箱是编译器的工作，而不是虚拟机。</p>
+<h3 id="5-6-枚举类"><a href="#5-6-枚举类" class="headerlink" title="5.6 枚举类"></a>5.6 枚举类</h3><p>将s设置成 Size.SMALL：<code>Size s = Enum.value0f(Size.class，&quot;SMALL&quot;);</code> </p>
+<p>在比较两个枚举类型时，直接用 == 就可以了。</p>
+<p>枚举的构造器总是私有的。</p>
+<h3 id="5-7-反射"><a href="#5-7-反射" class="headerlink" title="5.7 反射"></a>5.7 反射</h3><blockquote>
+<p>能够分析类能力的程序称为反射（<strong>reflective</strong>)。可以用来编写能够<strong>动态</strong>操纵 Java 代码的程序。</p>
+</blockquote>
+<p>反射机制可以用来:</p>
+<ul>
+<li>在运行时分析类的能力。</li>
+<li>在运行时检查对象，例如，编写一个适用于所有类的 toString方法。</li>
+<li>实现泛型数组操作代码。</li>
+<li>利用Method对象,这个对象很像C++中的函数指针。</li>
+</ul>
+<p>每个对象都有一个运行时类型标识，它跟踪每个对象所属的类。可以利用 Class 类访问这个信息，Class 对象会描述一个特定类的属性。</p>
+<h4 id="5-7-4-利用反射分析类"><a href="#5-7-4-利用反射分析类" class="headerlink" title="5.7.4 利用反射分析类"></a>5.7.4 利用反射分析类</h4><h2 id="第6章、接口、lambda表达式与内部类"><a href="#第6章、接口、lambda表达式与内部类" class="headerlink" title="第6章、接口、lambda表达式与内部类"></a>第6章、接口、lambda表达式与内部类</h2><p>接口中所有的方法都自动是 public 方法。</p>
+<h4 id="6-1-2-接口的属性"><a href="#6-1-2-接口的属性" class="headerlink" title="6.1.2 接口的属性"></a>6.1.2 接口的属性</h4><p>尽管不能构造接口的对象，却能声明接口的变量，接口变量必须引用<strong>实现</strong>了这个接口的类对象。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">comparable</span> <span class="variable">x</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Employee</span>();</span><br></pre></td></tr></table></figure>
+
+<p>可以使用 <code>instanceof</code>检查一个对象是否实现了某个接口：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(object <span class="keyword">instanceof</span> interface)&#123;...&#125;</span><br></pre></td></tr></table></figure>
+
+<p>接口的继承：从通用性较高的接口拓展到专用型较高的接口。</p>
+<p>虽然在接口中不能包含实例字段，但是可以包含<strong>常量</strong>，接口中的字段总是 <strong>public static final</strong></p>
+<h4 id="6-1-5-接口的默认方法"><a href="#6-1-5-接口的默认方法" class="headerlink" title="6.1.5 接口的默认方法"></a>6.1.5 接口的默认方法</h4><p>可以为接口方法提供一个默认实现，用 default 标记这样一个方法。每一个具体实现都会覆盖这个方法。</p>
+<p>若一个接口中定义了一个默认方法，而另外一个父类或接口中又定义了同一个同名的方法时：</p>
+<ul>
+<li>选择父类中的方法。如果一个父类提供了具体的实现，那么接口中具有相同名称的参数的默认方法会被忽略。</li>
+<li>接口冲突。如果一个父接口提供一个默认方法，而另一个接口中也提供了一个具有相同名称和参数列表的方法（不管方法是否是默认方法），那么必须覆盖该方法来解决冲突。</li>
+</ul>
+<h4 id="6-1-7-接口与回调"><a href="#6-1-7-接口与回调" class="headerlink" title="6.1.7 接口与回调"></a>6.1.7 接口与回调</h4><p>指定某个特定事件发生时应该采取的动作（<strong>例</strong>：Timer 类）</p>
+<h4 id="6-1-8-Comparator-接口"><a href="#6-1-8-Comparator-接口" class="headerlink" title="6.1.8 Comparator 接口"></a>6.1.8 Comparator 接口</h4><h4 id="6-1-9-对象克隆"><a href="#6-1-9-对象克隆" class="headerlink" title="6.1.9 对象克隆"></a>6.1.9 对象克隆</h4><ul>
+<li>浅克隆 深克隆</li>
+</ul>
+<h3 id="6-2-lambda-表达式"><a href="#6-2-lambda-表达式" class="headerlink" title="6.2 lambda 表达式"></a>6.2 lambda 表达式</h3><h4 id="6-2-4-方法引用"><a href="#6-2-4-方法引用" class="headerlink" title="6.2.4 方法引用"></a>6.2.4 方法引用</h4><p>方法引用（MethodReference）是Lambda表达式的另一种格式，在某些场景下可以提高代码的可读性</p>
+<h2 id="第七章、异常、断言和日志"><a href="#第七章、异常、断言和日志" class="headerlink" title="第七章、异常、断言和日志"></a>第七章、异常、断言和日志</h2><h3 id="7-1-处理错误"><a href="#7-1-处理错误" class="headerlink" title="7.1 处理错误"></a>7.1 处理错误</h3><h4 id="7-1-1-异常分类"><a href="#7-1-1-异常分类" class="headerlink" title="7.1.1 异常分类"></a>7.1.1 异常分类</h4><blockquote>
+<p>Throwable</p>
+<blockquote>
+<p>Error</p>
+<p>Exception</p>
+<blockquote>
+<p>IOException</p>
+</blockquote>
+<blockquote>
+<p>RuntimeException </p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>Java语言规范将派生于 Error 类或 RuntimeException 类的所有异常称为非检查型(unchecked) 异常，所有其他的异常称为检查型( checked)异常。</p>
+<h3 id="7-2-捕获异常"><a href="#7-2-捕获异常" class="headerlink" title="7.2 捕获异常"></a>7.2 捕获异常</h3><h4 id="7-2-1-捕获异常"><a href="#7-2-1-捕获异常" class="headerlink" title="7.2.1 捕获异常"></a>7.2.1 捕获异常</h4><p>如果发生了某个异常，但没有在任何地方捕获这个异常，程序就会终止，并在控制台上打印一个消息，其中包括这个异常的类型和一个堆栈轨迹。</p>
+<p>如果try语句块中的任何代码抛出了catch子句中指定的一个异常类，那么：</p>
+<ol>
+<li>程序将跳过try语句块的其余代码。</li>
+<li>程序将执行catch子句中的处理器代码。</li>
+</ol>
+<p>如果方法中的任何代码抛出了catch子句中没有声明的一个异常类型，那么这个方法就会立即退出（希望它的调用者为这种类型的异常提供了catch子句)。</p>
+<h3 id="7-5-日志"><a href="#7-5-日志" class="headerlink" title="7.5 日志"></a>7.5 日志</h3><h3 id="7-6-调试技巧"><a href="#7-6-调试技巧" class="headerlink" title="7.6 调试技巧"></a>7.6 调试技巧</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Logger.getGlobal.info(<span class="string">&quot;...&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="第八章、泛型程序设计"><a href="#第八章、泛型程序设计" class="headerlink" title="第八章、泛型程序设计"></a>第八章、泛型程序设计</h2><h3 id="8-2-定义简单泛型类"><a href="#8-2-定义简单泛型类" class="headerlink" title="8.2 定义简单泛型类"></a>8.2 定义简单泛型类</h3><p>泛型类就是有一个或多个类型变量的类。</p>
+<h3 id="8-3-泛型方法"><a href="#8-3-泛型方法" class="headerlink" title="8.3 泛型方法"></a>8.3 泛型方法</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Main</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; T <span class="title function_">getMiddle</span><span class="params">(T... a)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> a[a.length/<span class="number">2</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//调用：</span></span><br><span class="line"><span class="type">String</span> <span class="variable">s</span> <span class="operator">=</span> Main.&lt;String&gt;getMiddle(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;2&quot;</span>,<span class="string">&quot;3&quot;</span>);</span><br><span class="line"><span class="comment">//or</span></span><br><span class="line"><span class="type">String</span> <span class="variable">s</span> <span class="operator">=</span> Main.getMiddle(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;2&quot;</span>,<span class="string">&quot;3&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>类型变量放在修饰符后面，返回类型前面。</p>
+<p>泛型方法可以再普通类中定义，也可以在泛型类中定义。</p>
+<h3 id="8-4-类型变量的限定"><a href="#8-4-类型变量的限定" class="headerlink" title="8.4 类型变量的限定"></a>8.4 类型变量的限定</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//约束 T 类实现了某接口或者继承自某个超类</span><br><span class="line">public static &lt;T extends Comparable&gt; T min(T[] a)</span><br></pre></td></tr></table></figure>
+
+<p>通用关键字 extends ,限定就是类型变量类拓展了或者实现了哪个接口。</p>
+<h3 id="8-5-泛型代码和虚拟机"><a href="#8-5-泛型代码和虚拟机" class="headerlink" title="8.5 泛型代码和虚拟机"></a>8.5 泛型代码和虚拟机</h3><p>虚拟机没有泛型类型对象，所有对象都是普通类。</p>
+<h4 id="8-5-3-转换泛型方法"><a href="#8-5-3-转换泛型方法" class="headerlink" title="8.5.3 转换泛型方法"></a>8.5.3 转换泛型方法</h4><p>当继承一个泛型类时，同名方法会重写而不是重载。</p>
+<p>父类型引用子类时，类型擦除与多态会发生冲突。父类型方法参数会被擦除为 Object 类型，然后编译器生成一个桥方法。相当于参数先向上转型，再由桥方法向下转型。</p>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/16923/20230226012027.png"></p>
+<h3 id="8-8-通配符类型"><a href="#8-8-通配符类型" class="headerlink" title="8.8 通配符类型"></a>8.8 通配符类型</h3><h4 id="8-8-3-无限定通配符"><a href="#8-8-3-无限定通配符" class="headerlink" title="8.8.3 无限定通配符"></a>8.8.3 无限定通配符</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Pair&lt;?&gt;&#123;</span><br><span class="line">	? getFirst()</span><br><span class="line">	<span class="keyword">void</span> <span class="title function_">setFirst</span><span class="params">(?)</span>        </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>getFirst 的返回值只能赋值给一个 Object。 setFirst 方法不能被调用，甚至不能用 Object 调用。<strong>Pair&lt;?&gt; 和 Pair 本质不同</strong>在于可以用任意 Object 对象调用原始 Pair  类的 setFirst 方法。</p>
+<h4 id="8-8-4-通配符捕获"><a href="#8-8-4-通配符捕获" class="headerlink" title="8.8.4 通配符捕获"></a>8.8.4 通配符捕获</h4><p>通配符泛型类可以调用普通泛型类的方法</p>
+<h3 id="8-9-反射和泛型"><a href="#8-9-反射和泛型" class="headerlink" title="8.9 反射和泛型"></a>8.9 反射和泛型</h3><h2 id="第九章、集合"><a href="#第九章、集合" class="headerlink" title="第九章、集合"></a>第九章、集合</h2><h3 id="9-1-集合框架"><a href="#9-1-集合框架" class="headerlink" title="9.1 集合框架"></a>9.1 集合框架</h3><ul>
+<li><strong>循环队列</strong>：ArrayDeque 类</li>
+<li><strong>链表队列</strong>：LinkedList 类</li>
+</ul>
+<h4 id="9-1-2-Collection-接口"><a href="#9-1-2-Collection-接口" class="headerlink" title="9.1.2 Collection 接口"></a>9.1.2 Collection 接口</h4><p>是集合类的基本接口。</p>
+<h4 id="9-1-3-迭代器"><a href="#9-1-3-迭代器" class="headerlink" title="9.1.3 迭代器"></a>9.1.3 迭代器</h4><p>for each 循环可以处理任何实现了 <strong>iterable</strong> 接口的对象。</p>
+<p>遍历也可以不写循环：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iterator.forEachRemaining(element-&gt;...);</span><br></pre></td></tr></table></figure>
+
+<p>迭代器访问元素的顺序取决于集合类型。如果访问 <strong>HashSet</strong> 中的元素，会按照基本上随机的顺序。</p>
+<p>可以认为迭代器位于两个元素之间。调用 <strong>next</strong> 时越过下个元素并返回越过元素的引用。</p>
+<p>Iterator的 **remove **方法会删除上次 <strong>next</strong> 越过的元素，如果调用 <strong>remove</strong> 方法之前没有调用 <strong>next</strong> 方法，会报错：（ <strong>IllegalStateException</strong> ）</p>
+<p>删除两个相邻的元素不能连续调用 <strong>remove</strong>：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">it.next();</span><br><span class="line">it.remove();</span><br><span class="line">it.next();</span><br><span class="line">it.remove();</span><br></pre></td></tr></table></figure>
+
+<h4 id="9-1-4-泛型实用方法"><a href="#9-1-4-泛型实用方法" class="headerlink" title="9.1.4 泛型实用方法"></a>9.1.4 泛型实用方法</h4><h3 id="9-2-集合框架中的接口"><a href="#9-2-集合框架中的接口" class="headerlink" title="9.2 集合框架中的接口"></a>9.2 集合框架中的接口</h3><p>集合有两个基本接口，Collection和map</p>
+<h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/16923/20230226012117.png"  /></h3><h3 id="9-2-集合框架中的接口-1"><a href="#9-2-集合框架中的接口-1" class="headerlink" title="9.2 集合框架中的接口"></a>9.2 集合框架中的接口</h3><p>集合不是集（ Set ）</p>
+<ul>
+<li>随机访问：使用一个整数索引来访问。</li>
+</ul>
+<p>两个集 set 只要包含同样的元素就认为他们是相等的。HashCode 方法的定义要保证包含相同元素的两个集会得到相同的散列码。</p>
+<h3 id="9-3-具体集合"><a href="#9-3-具体集合" class="headerlink" title="9.3 具体集合"></a>9.3 具体集合</h3><ol>
+<li><strong>ArrayList</strong></li>
+<li><strong>LinkedList</strong></li>
+<li><strong>ArrayDeque</strong></li>
+<li><strong>HashSet</strong></li>
+<li><strong>TreeSet</strong></li>
+<li><strong>EnumSet</strong></li>
+<li><strong>LinkedHashSet</strong></li>
+<li><strong>PriorityQueue</strong></li>
+<li><strong>HashMap</strong></li>
+<li><strong>TreeMap</strong></li>
+<li><strong>EnumMap</strong></li>
+<li><strong>LinkedHashMap</strong></li>
+<li><strong>WeakHashMap</strong></li>
+<li><strong>IdentityHashMap</strong></li>
+</ol>
+<h4 id="9-3-1-链表"><a href="#9-3-1-链表" class="headerlink" title="9.3.1 链表"></a>9.3.1 链表</h4><p>链表的迭代器如果检测到他的集合被另一个迭代器修改了，或者被自身的某个方法修改了，就会抛出异常。</p>
+<blockquote>
+<p>避免：迭代器只能读取或者只有一个能读写的迭代器。 </p>
+</blockquote>
+<h4 id="9-3-3-散列集-HashSet"><a href="#9-3-3-散列集-HashSet" class="headerlink" title="9.3.3 散列集 HashSet"></a>9.3.3 散列集 HashSet</h4><ul>
+<li>优点：能够快速查找元素</li>
+<li>缺点：无法控制元素出现的次序</li>
+</ul>
+<p>如果<code>a.equals(b) == true</code>，那么 a b 必须有相同的散列码。</p>
+<p>java中散列表用链表数组实现。每个列表被称为桶（<strong>Bucket</strong>）。桶已经被填充称为散列冲突。</p>
+<blockquote>
+<p>在 <strong>java</strong> 8 中，桶满时会从<strong>链表</strong>变成<strong>平衡二叉树</strong>。（能提高性能。</p>
+</blockquote>
+<p>将桶数设置为预计元素个数的 75% ~ 150%。标准库的桶数默认16，为表大小提供的任何值都将自动地转换为2的下一个幂数。</p>
+<p>如果桶已经填满了装填因子（默认0.75）就会进行再散列，桶数为原来二倍。</p>
+<h4 id="9-3-4-树集-TreeSet"><a href="#9-3-4-树集-TreeSet" class="headerlink" title="9.3.4 树集 TreeSet"></a>9.3.4 树集 TreeSet</h4><p>比散列集有所改进，有序集合。使用红黑树实现。</p>
+<p>选择树集还是散列集取决于数据是否需要有序。</p>
+<p>树集的泛型类必须实现了Comparable&lt;&gt;接口。</p>
+<p>将元素添加到树中比添加到散列表中慢。</p>
+<h4 id="9-3-5-队列-Queue-与双端队列-deuqe"><a href="#9-3-5-队列-Queue-与双端队列-deuqe" class="headerlink" title="9.3.5 队列( Queue )与双端队列( deuqe )"></a>9.3.5 队列( Queue )与双端队列( deuqe )</h4><ul>
+<li><p>队列允许高效地<strong>在尾部添加元素</strong>，在<strong>头部删除元素</strong>。</p>
+</li>
+<li><p>双端队列允许在头部和尾部都高效地添加或者删除元素。</p>
+</li>
+</ul>
+<h4 id="9-3-4-优先队列（priority-queue）"><a href="#9-3-4-优先队列（priority-queue）" class="headerlink" title="9.3.4 优先队列（priority queue）"></a>9.3.4 优先队列（priority queue）</h4><p>优先队列中的元素可以按照任意的顺序插入，但会按照有序的顺序进行检索。无论何时调用 <strong>remove</strong> 方法，总会获得当前队列中<strong>最小</strong>的元素。</p>
+<p>优先队列使用堆（ <strong>heap</strong> ），是一个可以自组织的二叉树，添加和删除操作可以让最小的元素移动到根，而不必花费时间对元素进行排序。</p>
+<ul>
+<li>典型用法：任务调度</li>
+</ul>
+<p>优先队列的迭代不按照有序顺序来访问元素。</p>
+<h3 id="9-4-映射（Map）"><a href="#9-4-映射（Map）" class="headerlink" title="9.4 映射（Map）"></a>9.4 映射（Map）</h3><h4 id="9-4-1-基本映射操作"><a href="#9-4-1-基本映射操作" class="headerlink" title="9.4.1 基本映射操作"></a>9.4.1 基本映射操作</h4><ul>
+<li>HashMap （稍快 无序）</li>
+<li>TreeMap  （稍慢 有序）</li>
+</ul>
+<p>HashMap 对键进行散列，TreeMap 根据键的顺序将元素组织为一个搜索树。散列或比较函数只应用于键。</p>
+<h4 id="9-4-3-映射视图-（三种集）"><a href="#9-4-3-映射视图-（三种集）" class="headerlink" title="9.4.3 映射视图 （三种集）"></a>9.4.3 映射视图 （三种集）</h4><p>集合框架不认为映射本身是一个集合。不过映射的三个视图可以。</p>
+<ul>
+<li><p><strong>keySet</strong>()</p>
+<ul>
+<li><p>不是散列集也不是树集。</p>
+</li>
+<li><p>如果在<strong>键集</strong>上调用迭代器的 <strong>remove</strong> 方法 会从映射中删除这个键值对。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>values</strong>()</p>
+</li>
+<li><p><strong>entrySet</strong>()</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 淘汰了</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">for</span>(Map.Entry&lt;String, Employee&gt; entry : staff.entrySet())&#123;</span><br><span class="line">    <span class="type">String</span> <span class="variable">k</span> <span class="operator">=</span> entry.getKey();</span><br><span class="line">    <span class="type">Employee</span> <span class="variable">v</span> <span class="operator">=</span> entry.getValue():</span><br><span class="line">    <span class="comment">//do sth</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// now</span></span><br><span class="line">map.forEach((k, v) -&gt;&#123;</span><br><span class="line">    <span class="keyword">do</span> sth;</span><br><span class="line">&#125;)</span><br><span class="line">    </span><br><span class="line">    </span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="9-4-4-弱散列映射（WeakHashMap）"><a href="#9-4-4-弱散列映射（WeakHashMap）" class="headerlink" title="9.4.4 弱散列映射（WeakHashMap）"></a>9.4.4 弱散列映射（WeakHashMap）</h4><p>普通映射要求程序负责从长期存活的映射表中删除无用的键值对。或者，使用 WeakHashMap。</p>
+<p>当对键的唯一引用来自散列表映射（ <strong>HashMap</strong> ）时，这个数据结构将与垃圾回收器协同工作一起删除键值对。</p>
+<p>内部工作原理：使用弱引用保存键。</p>
+<h3 id="9-6-算法"><a href="#9-6-算法" class="headerlink" title="9.6 算法"></a>9.6 算法</h3><h4 id="9-6-2-排序与混排"><a href="#9-6-2-排序与混排" class="headerlink" title="9.6.2 排序与混排"></a>9.6.2 排序与混排</h4><p>对链表的排序：有一种归并排序可以对链表高效地排序，但是java 将元素转入一个数组，对数组进行排序，然后再将排序好的结果复制回列表。</p>
+<p>集合类库中使用的是归并排序。因为它是稳定的，而快速排序是不稳定的。</p>
+<ul>
+<li>列表支持 set 方法：modifiable 可修改的。</li>
+<li>列表支持 add 和 remove 方法，resizable 可改变大小的。</li>
+</ul>
+<h4 id="9-6-3-二分查找"><a href="#9-6-3-二分查找" class="headerlink" title="9.6.3 二分查找"></a>9.6.3 二分查找</h4><p><code>Collections.binarySearch</code></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//二分查找</span></span><br><span class="line">index = Collections.binarySearch(c, element, comparator);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>非负：对象的索引</li>
+<li>负：没查到</li>
+<li>element <strong>应该插入的位置</strong>：-i - 1</li>
+</ul>
+<p>采用随机访问二分查找才有意义，如果提供一个链表，它将自动转换为线性查找。</p>
+<h4 id="9-6-4-简单算法"><a href="#9-6-4-简单算法" class="headerlink" title="9.6.4 简单算法"></a>9.6.4 简单算法</h4><h4 id="9-6-5-批操作"><a href="#9-6-5-批操作" class="headerlink" title="9.6.5 批操作"></a>9.6.5 批操作</h4><h4 id="9-6-6-集合与数组的转换"><a href="#9-6-6-集合与数组的转换" class="headerlink" title="9.6.6 集合与数组的转换"></a>9.6.6 集合与数组的转换</h4><ul>
+<li><p>数组转集合：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">HsahSet</span>&lt;&gt;(List.of(values));</span><br></pre></td></tr></table></figure></li>
+<li><p>集合转数组：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Object[] values = staff.toArray();</span><br><span class="line"><span class="comment">// 或者，必须指定长度为零的数组</span></span><br><span class="line">String[] values = staff.toArray(<span class="keyword">new</span> <span class="title class_">String</span>[<span class="number">0</span>]);</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="9-7-遗留的集合"><a href="#9-7-遗留的集合" class="headerlink" title="9.7 遗留的集合"></a>9.7 遗留的集合</h3><h4 id="9-7-1-HashTable"><a href="#9-7-1-HashTable" class="headerlink" title="9.7.1 HashTable"></a>9.7.1 HashTable</h4><p>与 HashMap 作用一样。HashTable 方法是同步的。如果需要并发访问，使用 ConcurrentHashMap。</p>
+<h4 id="9-7-4-栈-java-util-Stack"><a href="#9-7-4-栈-java-util-Stack" class="headerlink" title="9.7.4 栈  java.util.Stack"></a>9.7.4 栈  java.util.Stack</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">E <span class="title function_">push</span><span class="params">(E item)</span>;</span><br><span class="line">E <span class="title function_">pop</span><span class="params">()</span>;</span><br><span class="line">E <span class="title function_">peek</span><span class="params">()</span>;</span><br></pre></td></tr></table></figure>
+
+<h4 id="9-7-5-位集-BitSet"><a href="#9-7-5-位集-BitSet" class="headerlink" title="9.7.5 位集 BitSet"></a>9.7.5 位集 BitSet</h4><h2 id="第十二章-并发"><a href="#第十二章-并发" class="headerlink" title="第十二章 并发"></a>第十二章 并发</h2><p>并发执行的<strong>进程</strong>数目并不受限于 CPU 数目，操作系统会为每个<strong>进程</strong>分配 CPU 时间片，给人并行处理的感觉。</p>
+<p>单个程序看起来在同时完成多个任务，每个任务在一个<strong>线程</strong>（ thread ）中执行。如果一个程序可以同时运行多个线程，则称这个程序是多线程的。</p>
+<p>多进程与多线程的<strong>区别</strong>：</p>
+<ul>
+<li>本质：每个进程都拥有自己的一整套变量，线程则共享数据。<ul>
+<li>共享变量使线程之间的通信比进程之间的通信更有效、更容易。</li>
+</ul>
+</li>
+<li>线程更轻量级，创建撤销一个线程比启动新进程的开销要小得多。</li>
+</ul>
+<h3 id="12-1-什么是线程"><a href="#12-1-什么是线程" class="headerlink" title="12.1 什么是线程"></a>12.1 什么是线程</h3><h3 id="12-2-线程状态"><a href="#12-2-线程状态" class="headerlink" title="12.2 线程状态"></a>12.2 线程状态</h3><p><strong>线程有六种状态</strong>，调用 getState 方法确定一个线程的当前状态。</p>
+<ol>
+<li><strong>New（新建</strong></li>
+<li><strong>Runnable（可运行</strong></li>
+<li><strong>Blocked（阻塞</strong></li>
+<li><strong>Waiting（等待</strong></li>
+<li><strong>Timed waiting（计时等待</strong></li>
+<li><strong>Terminated（终止</strong></li>
+</ol>
+<p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/16923/20230226012231.png"></p>
+<h4 id="12-1-1-新建线程"><a href="#12-1-1-新建线程" class="headerlink" title="12.1.1 新建线程"></a>12.1.1 新建线程</h4><p>new Thread(r) 此时现成还没有开始执行，状态为 new 新建。</p>
+<h4 id="12-2-2-可运行线程-runnable"><a href="#12-2-2-可运行线程-runnable" class="headerlink" title="12.2.2 可运行线程 runnable"></a>12.2.2 可运行线程 runnable</h4><p>一个可运行的线程可能正在运行也可能没有运行。</p>
+<p>在有多个处理器的机器上，每个处理器运行一个线程，可以有多个线程并行运行。如果线程的数目多于处理器的数目，调度器还是需要分配时间片。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 使当前执行的线程向另一个线程交出运行权。</span></span><br><span class="line">java.lang.Thread.<span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">yield</span><span class="params">()</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="12-2-3-阻塞和等待线程-Blocked-Waiting"><a href="#12-2-3-阻塞和等待线程-Blocked-Waiting" class="headerlink" title="12.2.3 阻塞和等待线程 Blocked Waiting"></a>12.2.3 阻塞和等待线程 Blocked Waiting</h4><p>当线程处于<strong>阻塞</strong>或<strong>等待状态</strong>时，它不运行任何代码，最少的资源。要由<strong>线程调度器</strong>重新激活这个线程。具体细节取决于它是怎样到达非活动状态的。</p>
+<ul>
+<li>当线程试图获取一个<strong>内部的对象锁</strong>，而它被其他线程占有，该线程就会被阻塞。当所有其他线程都释放了这个锁，并且线程调度器允许该线程持有这个锁时，它将变成非阻塞状态。</li>
+<li>当线程等待另一个线程通知调度器出现一个条件时，这个线程会进入等待状态。<code>Object.wait</code> <code>Thread.join</code> 或是等待 <code>java.util.concurrent</code>库中的 Lock 或 Condition 时，就会出现这种情况。<strong>阻塞状态与等待状态并没有太大区别</strong>。</li>
+<li>有几个方法有超时参数，调用这些方法会让线程进入计时等待状态。</li>
+</ul>
+<h4 id="12-2-4-终止线程"><a href="#12-2-4-终止线程" class="headerlink" title="12.2.4 终止线程"></a>12.2.4 终止线程</h4><p>线程有两个原因而终止：</p>
+<ul>
+<li>run 方法正常退出。</li>
+<li>一个没有捕获的异常终止了 run 方法，线程意外终止。</li>
+</ul>
+<p>可以调用线程的 stop 方法杀死一个线程，它抛出 ThreadDeath 杀死线程。（<strong>废弃</strong>）</p>
+<h3 id="12-3-线程属性"><a href="#12-3-线程属性" class="headerlink" title="12.3 线程属性"></a>12.3 线程属性</h3><p>中断状态、守护线程、未捕获异常的处理器以及不应使用的一些遗留特性。</p>
+<h4 id="12-3-1-中断线程"><a href="#12-3-1-中断线程" class="headerlink" title="12.3.1 中断线程"></a>12.3.1 中断线程</h4><p>interrupt 方法可以用来请求终止一个线程，调用时设置线程的中断状态，线程应该不时地检查这个标志，判断线程是否被中断。</p>
+<h4 id="12-3-2-守护线程"><a href="#12-3-2-守护线程" class="headerlink" title="12.3.2 守护线程"></a>12.3.2 守护线程</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">t.setDaemon(<span class="literal">true</span>);</span><br></pre></td></tr></table></figure>
+
+<p>将一个线程转换为守护线程。</p>
+<p>守护线程的唯一用途是为其他线程提供服务。计时器线程就是一个例子。</p>
+<p>只剩下守护线程时，虚拟机就会退出。</p>
+<h4 id="12-3-4-未捕获异常的处理器"><a href="#12-3-4-未捕获异常的处理器" class="headerlink" title="12.3.4 未捕获异常的处理器"></a>12.3.4 未捕获异常的处理器</h4><p> 线程的 run 方法不能抛出任何检查性异常，非检查型异常可能会导致线程终止。</p>
+<h4 id="12-3-5-线程优先级"><a href="#12-3-5-线程优先级" class="headerlink" title="12.3.5 线程优先级"></a>12.3.5 线程优先级</h4><p>每个线程有一个优先级，继承构造它的那个线程的优先级。 setPriority 方法设置1 - 10 中的值。（最大为10）</p>
+<p>虚拟机依赖于宿主机平台的线程优先级：windows有 7 个。</p>
+<h3 id="12-4-同步"><a href="#12-4-同步" class="headerlink" title="12.4 同步"></a>12.4 同步</h3><p>两个线程共享统一数据存取导致相互覆盖可能导致对象被破坏的情况叫竞态条件。</p>
+<p>如果能确保线程失去控制之前方法已经运行完成，那么银行账户对象的状态就不会被破坏。</p>
+<h4 id="12-4-3-锁对象"><a href="#12-4-3-锁对象" class="headerlink" title="12.4.3 锁对象"></a>12.4.3 锁对象</h4><p>有两种机制可防止并发访问代码块：</p>
+<ul>
+<li>synchronized</li>
+<li>ReentrantLock（重入锁）</li>
+</ul>
+<p>重入锁：线程可以反复获得已拥有的锁。</p>
+<h4 id="12-4-4-条件对象"><a href="#12-4-4-条件对象" class="headerlink" title="12.4.4 条件对象"></a>12.4.4 条件对象</h4><p>用条件对象来管理已经获得了一个锁却不能做有用工作的线程。</p>
+<p>ReentrantLock.newCondition();</p>
+<p>另一个线程调用 singnalAll激活等待这个条件的所有线程。</p>
+<p>所有线程都被阻塞，等待其他线程重新激活，那么就会发生<strong>死锁</strong>。</p>
+<p>只要一个对象的状态有变化，而且可能<strong>有利于</strong>其他等待的线程，就可以调用 <strong>singnalAll</strong>。</p>
+<h4 id="12-4-5-synchronized-关键字"><a href="#12-4-5-synchronized-关键字" class="headerlink" title="12.4.5 synchronized 关键字"></a>12.4.5 synchronized 关键字</h4><ul>
+<li>锁用来保护代码片段，只有一个线程可以执行被保护的代码块。</li>
+<li>锁可以<strong>管理</strong>试图进入被保护代码段的<strong>线程</strong>。</li>
+<li>每个<strong>条件对象</strong>管理那些已经进入被保护代码段<strong>但还不能运行的线程</strong>。</li>
+</ul>
+<p>1.0 版开始，Java 每一个对象都有一个<strong>内部锁</strong>。并且这个锁有一个<strong>内部条件</strong>。锁会管理试图进入 synchronized 方法的线程；这个条件可以管理调用了 wait 的线程。</p>
+<p><strong>内部锁和条件</strong>有一些限制：</p>
+<ul>
+<li>不能中断一个正在尝试获得锁的线程。</li>
+<li>不能指定尝试获得锁时的超时时间。</li>
+<li>每个锁仅有一个条件可能是不够的。</li>
+</ul>
+<p>可以选择 <strong>java.util.concurrent</strong> 包中的某种机制处理所有锁定。</p>
+<h4 id="12-4-6-同步块"><a href="#12-4-6-同步块" class="headerlink" title="12.4.6 同步块"></a>12.4.6 同步块</h4><p>线程通过调用同步方法获得锁。也可以通过进入一个同步块获得锁。</p>
+<p>使用一个对象的锁来实现额外的原子操作，这种做法称为客户端锁定。</p>
+<h4 id="12-4-7-监视器概念"><a href="#12-4-7-监视器概念" class="headerlink" title="12.4.7 监视器概念"></a>12.4.7 监视器概念</h4><p>不考虑显式锁就可以保证多线程的安全性，最成功的解决方案之一是：监视器（<strong>monitor</strong>），有特性：</p>
+<ul>
+<li>监视器是只包含私有字段的类</li>
+<li>监视器类的每一个对象有一个关联的锁。</li>
+<li>所有方法由这个锁锁定。</li>
+<li>锁可以有任意多个相关联的条件。</li>
+</ul>
+<h4 id="12-4-10-原子性"><a href="#12-4-10-原子性" class="headerlink" title="12.4.10 原子性"></a>12.4.10 原子性</h4><p>java.util.concurrent.atomic 包</p>
+<h4 id="12-4-11-死锁"><a href="#12-4-11-死锁" class="headerlink" title="12.4.11 死锁"></a>12.4.11 死锁</h4><h3 id="12-5-线程安全的集合"><a href="#12-5-线程安全的集合" class="headerlink" title="12.5 线程安全的集合"></a>12.5 线程安全的集合</h3><h3 id="12-6-任务和线程池"><a href="#12-6-任务和线程池" class="headerlink" title="12.6 任务和线程池"></a>12.6 任务和线程池</h3><p>如果程序中创建了大量生命周期很短的线程，那么不应该把每个任务映射到一个单独的线程，而应该使用线程池。为线程池提供一个 Runnable 就会有一个线程调用 run 方法。</p>
+<h4 id="12-6-1-Callable-与-Future"><a href="#12-6-1-Callable-与-Future" class="headerlink" title="12.6.1 Callable 与 Future"></a>12.6.1 Callable 与 Future</h4><h4 id="12-6-2-执行器"><a href="#12-6-2-执行器" class="headerlink" title="12.6.2 执行器"></a>12.6.2 执行器</h4><h3 id="12-7-异步计算"><a href="#12-7-异步计算" class="headerlink" title="12.7 异步计算"></a>12.7 异步计算</h3><h1 id="JAVA-8"><a href="#JAVA-8" class="headerlink" title="JAVA 8"></a>JAVA 8</h1><h3 id="方法引用"><a href="#方法引用" class="headerlink" title="方法引用"></a>方法引用</h3><p>通过方法的名字来指向一个方法。</p>
+<h3 id="Java-8-Stream"><a href="#Java-8-Stream" class="headerlink" title="Java 8 Stream"></a>Java 8 Stream</h3><h4 id="生成流"><a href="#生成流" class="headerlink" title="生成流"></a>生成流</h4><p>在 Java 8 中, 集合接口有两个方法来生成流：</p>
+<ul>
+<li><strong>stream()</strong> − 为集合创建串行流。</li>
+<li><strong>parallelStream()</strong> − 为集合创建并行流。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; strings = Arrays.asList(<span class="string">&quot;abc&quot;</span>, <span class="string">&quot;&quot;</span>, <span class="string">&quot;bc&quot;</span>, <span class="string">&quot;efg&quot;</span>, <span class="string">&quot;abcd&quot;</span>,<span class="string">&quot;&quot;</span>, <span class="string">&quot;jkl&quot;</span>); </span><br><span class="line">List&lt;String&gt; filtered = </span><br><span class="line">    strings.stream().filter(string -&gt; !string.isEmpty()).collect(Collectors.toList());</span><br></pre></td></tr></table></figure>
+
+<h4 id="forEach"><a href="#forEach" class="headerlink" title="forEach"></a>forEach</h4><p>Stream 提供了新的方法 ‘forEach’ 来迭代流中的每个数据。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Random</span> <span class="variable">random</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line">random.ints().limit(<span class="number">10</span>).forEach(System.out::println);</span><br></pre></td></tr></table></figure>
+
+<h4 id="map"><a href="#map" class="headerlink" title="map"></a>map</h4><p>.collect表示去重</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">List&lt;Integer&gt; numbers = Arrays.asList(<span class="number">3</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">7</span>, <span class="number">3</span>, <span class="number">5</span>);</span><br><span class="line"><span class="comment">// 获取对应的平方数</span></span><br><span class="line">List&lt;Integer&gt; squaresList = numbers.stream().map( i -&gt; i*i).distinct().collect(Collectors.toList());</span><br></pre></td></tr></table></figure>
+
+<h4 id="limit"><a href="#limit" class="headerlink" title="limit"></a>limit</h4><p>limit 方法用于获取指定数量的流。 以下代码片段使用 limit 方法打印出 10 条数据：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Random</span> <span class="variable">random</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line">random.ints().limit(<span class="number">10</span>).forEach(System.out::println);</span><br></pre></td></tr></table></figure>
+
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://which5264.github.io/2023/02/26/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="clek7rzjf0000z0n37aq2ciky" class="article-share-link">Share</a>
+      <a data-url="https://which5264.github.io/2023/02/26/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="clek8gnvl0000asn3f5t0753v" class="article-share-link">Share</a>
       
       
     </footer>
@@ -129,7 +568,7 @@
       <ul>
         
           <li>
-            <a href="/2023/02/26/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
+            <a href="/2023/02/26/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">JAVA核心技术学习笔记</a>
           </li>
         
       </ul>
